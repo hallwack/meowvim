@@ -92,22 +92,3 @@ for _, mapping in ipairs(key_mappings) do
   local opts = { noremap = true, silent = true }
   vim.keymap.set("n", mapping[1], mapping[2], vim.tbl_extend("force", opts, { desc = mapping[3] }))
 end
-
-vim.api.nvim_create_autocmd("LspAttach", {
-  group = vim.api.nvim_create_augroup("my.lsp", {}),
-  callback = function(args)
-    local client = assert(vim.lsp.get_client_by_id(args.data.client_id))
-    local bufnr = args.buf
-
-    -- Enable formatting on save if supported
-    --[[ if client.supports_method("textDocument/formatting") then
-      vim.api.nvim_create_autocmd("BufWritePre", {
-        group = vim.api.nvim_create_augroup("my.lsp.format", { clear = false }),
-        buffer = bufnr,
-        callback = function()
-          vim.lsp.buf.format({ bufnr = bufnr, timeout_ms = 1000 })
-        end,
-      })
-    end ]]
-  end,
-})
