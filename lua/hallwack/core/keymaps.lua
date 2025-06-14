@@ -7,7 +7,7 @@ end
 map("n", "<C-b>", ":NvimTreeToggle toggle<CR>", default_options("For toogle NvimTreeToggle"))
 map("n", "<leader>ff", "<cmd>lua require('telescope.builtin').find_files()<cr>",
   default_options("For searching files using telescope"))
-map("n", "<leader>gr", "<cmd>lua require('telescope.builtin').live_grep()<cr>",
+map("n", "<leader>sg", "<cmd>lua require('telescope.builtin').live_grep()<cr>",
   default_options("For searching string using grep"))
 map("n", "<leader>bf", "<cmd>lua require('telescope.builtin').buffers()<cr>", default_options("For show buffer list(s)"))
 map("i", "jj", "<Esc>", default_options("For escape"))
