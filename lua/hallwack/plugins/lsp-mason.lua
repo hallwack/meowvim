@@ -24,7 +24,7 @@ return {
       ensure_installed = {
         "lua_ls",
         "ts_ls",
-        --[[ "denols", ]]
+        "denols",
         "tailwindcss",
         "prismals",
         "html",

@@ -35,8 +35,11 @@ return {
   {
     'adibhanna/laravel.nvim',
     ft = { 'php', 'blade' },
+    dependencies = {
+      'folke/snacks.nvim', -- Optional: for enhanced UI
+    },
     config = function()
-      require('laravel').setup()
+      --[[ require('laravel').setup() ]]
     end,
   }
 }

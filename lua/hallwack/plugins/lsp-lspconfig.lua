@@ -2,12 +2,6 @@ return {
   "neovim/nvim-lspconfig",
   event = { "BufReadPre", "BufNewFile" },
   config = function()
-    --[[ vim.lsp.config("denols", {
-      cmd = { "deno", "lsp" },
-      filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact" },
-      root_markers = { 'deno.json', 'deno.jsonc' },
-    }) ]]
-
     vim.lsp.enable({
       "lua_ls",
       "ts_ls",
@@ -20,8 +14,12 @@ return {
       "jsonls",
       "quick_lint_js",
       "intelephense",
+      "yamlls",
       "eslint_d",
-      "prettierd"
+      "prettierd",
+      "docker_compose_language_service",
+      "dockerls",
+      --[[ "sqlls" ]]
     })
   end
 }

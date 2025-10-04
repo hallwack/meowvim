@@ -116,10 +116,14 @@ return {
     priority = 1000,
     config = function()
       vim.cmd.colorscheme("ronny")
-      require("ronny").setup()
+      require("ronny").setup({
+        display = {
+          monokai_original = true
+        }
+      })
     end
   }, ]]
-  {
+  --[[ {
     'AlexvZyl/nordic.nvim',
     lazy = false,
     priority = 1000,
@@ -132,5 +136,28 @@ return {
         italic_comments = false,
       })
     end
-  },
+  }, ]]
+  --[[ {
+    'stevedylandev/darkmatter-nvim',
+    lazy = false,
+    priority = 1000,
+    config = function()
+      vim.cmd('colorscheme darkmatter')
+    end,
+  }, ]]
+  {
+    "https://gitlab.com/motaz-shokry/gruvbox.nvim",
+    name = "gruvbox",
+    priority = 1000,
+    config = function()
+      require("gruvbox").setup({
+        styles = {
+          transparency = true, -- Enable transparency
+        }
+      })
+
+      --[[ vim.cmd("colorscheme gruvbox-light") ]]
+      vim.cmd("colorscheme gruvbox-hard")
+    end
+  }
 }
