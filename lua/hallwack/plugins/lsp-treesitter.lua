@@ -56,10 +56,5 @@ return
     config = function(_, opts)
       require("nvim-treesitter.configs").setup(opts)
     end
-  },
-  {
-    "davidmh/mdx.nvim",
-    config = true,
-    dependencies = { "nvim-treesitter/nvim-treesitter" }
   }
 }
