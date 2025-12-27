@@ -21,6 +21,8 @@ return {
       },
       yaml = { "yamlfmt" },
 
+      nix = { "alejandra" },
+
       javascript = { "prettierd" },
       typescript = { "prettierd" },
       javascriptreact = { "prettierd" },
