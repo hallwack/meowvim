@@ -18,7 +18,11 @@ return {
     notifier = { enabled = true },
     scroll = { enabled = true },
     git = { enabled = true },
-    picker = { enabled = true },
+    picker = {
+      enabled = true,
+      hidden = true,
+      ignored = true
+    },
     terminal = {
       start_insert = false,
       auto_insert = false
