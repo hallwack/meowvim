@@ -33,6 +33,8 @@ return {
         "astro",
         "jsonls",
         "intelephense",
+        "basedpyright",
+        "laravel_ls"
       },
       automatic_installation = true, -- not the same as ensure_installed
       automatic_enable = false,      -- removes multiple lsp servers
@@ -44,6 +46,7 @@ return {
         "blade-formatter",
         "eslint_d",
         "quick_lint_js",
+        "ruff"
       },
     })
   end,

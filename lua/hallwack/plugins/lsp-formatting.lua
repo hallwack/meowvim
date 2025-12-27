@@ -31,6 +31,7 @@ return {
       json = { "prettierd" },
       markdown = { "prettierd" },
       graphql = { "prettierd" },
+      python = { "ruff" },
 
       --[[ javascript = { "prettier" }, ]]
       --[[ typescript = { "prettier" }, ]]

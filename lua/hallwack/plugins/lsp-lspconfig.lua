@@ -19,6 +19,9 @@ return {
       "prettierd",
       "docker_compose_language_service",
       "dockerls",
+      "basedpyright",
+      "ruff",
+      "laravel_ls"
       --[[ "sqlls" ]]
     })
   end
